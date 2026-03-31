@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My First Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @media (max-width: 700px) {
+
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hero h1 {
+                font-size: 28px;
+            }
+
+        }
+
+        /* SMOOTH SCROLL */
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 60px;
+        }
+
+        body {
+            margin: 10;
+            font-family: Arial;
+            background-color: violet;
+        }
+
+        /* HEADER */
+
+        header {
+            background-color: pink;
+            color: purple;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* NAVBAR */
+
+        nav {
+            background-color: pink;
+            text-align: center;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: purple;
+            text-decoration: none;
+            margin: 15px;
+            padding: 8px 12px;
+            transition: 1s;
+        }
+
+        nav a:hover {
+            background-color: violet;
+            color: white;
+        }
+
+        /* HERO SECTION */
+
+        .hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url("https://picsum.photos/1200/500");
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 120px 20px;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+        }
+
+        .hero p {
+            font-size: 25px;
+        }
+
+        /* BUTTON */
+
+        .btn {
+            background-color: pink;
+            color: purple;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: violet;
+            color: white
+        }
+
+        /* MAIN CONTENT */
+
+        main {
+            text-align: center;
+            padding: 40px;
+        }
+
+        /* CARDS */
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: pink;
+            padding: 20px;
+            width: 200px;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(10, 10, 10, 10.2);
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* FOOTER */
+
+        footer {
+            background-color: purple;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header id="home">
+        <h1>Welcome to My Website</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="hero">
+        <h1>Learn HTML With Me</h1>
+        <p>I am building my first website!</p>
+        <a href="#" class="btn">Start Learning</a>
+    </section>
+
+    <main id="about">
+
+        <h2>About This Page</h2>
+        <p>This is my first website. I am learning HTML!</p>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>HTML</h3>
+                <p>HTML builds the structure of websites.</p>
+            </div>
+
+            <div class="card">
+                <h3>CSS</h3>
+                <p>CSS styles websites.</p>
+            </div>
+
+            <div class="card">
+                <h3>JavaScript</h3>
+                <p>JavaScript adds interaction.</p>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer id="contact">
+        <p>© 2026 My Website</p>
+    </footer>
+
+</body>
+
+</html>
